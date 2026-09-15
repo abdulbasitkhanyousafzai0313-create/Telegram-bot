@@ -302,3 +302,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+@bot.message_handler(commands=['resetstats'])
+def handle_reset(message):
+    # Sirf Admin ke liye
+    if str(message.from_user.id) == str(ADMIN_ID):
+        reset_all_data()
+        bot.reply_to(message, "⚠️ تمام کلائنٹس اور اسٹیٹس کا ڈیٹا ری سیٹ (0) کر دیا گیا ہے۔")
+    else:
+        bot.reply_to(message, "❌ آپ کے پاس یہ کمانڈ چلانے کا اختیار نہیں ہے۔")
