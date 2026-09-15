@@ -146,3 +146,10 @@ def get_team_stats():
     rows = cur.fetchall()
     conn.close()
     return rows
+def reset_all_data():
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM clients")
+    cursor.execute("DELETE FROM proofs")
+    conn.commit()
+    conn.close()
