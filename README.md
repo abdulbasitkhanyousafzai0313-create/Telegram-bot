@@ -73,3 +73,4 @@ bot chalne par ban jati hai. Isko backup lena ho toh ye file copy kar lo.
 - Jab `/addnumber` use karoge, number sirf aapko wapas bot mein dikhega taaki aap
   copy karke client ko manually bhej sako (WhatsApp/call se).
 - `/proof` ke baad hi us client ka count `/mystats` aur `/teamstats` mein jud'ta hai.
+- /resetstats - (sirf admin) tamam stats aur clients data clear karo
