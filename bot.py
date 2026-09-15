@@ -1,7 +1,7 @@
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-API_TOKEN = '8816202992:AAEemZFEmOXQPSZt40VWMePwyLnd2haZ5M'
+API_TOKEN = '8816202992:AAEemZFEmOXOQPSZt4OVWMePwyLnd2haZ5M'
 bot = telebot.TeleBot(API_TOKEN)
 
 @bot.message_handler(content_types=['photo'])
